@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'FileUpload' do
+    pod ‘AFNetworking’
+end
