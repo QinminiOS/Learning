@@ -15,6 +15,8 @@
 #import <string>
 #import <map>
 #import <unordered_map>
+#import <list>
+#import <stack>
 
 using namespace std;
 

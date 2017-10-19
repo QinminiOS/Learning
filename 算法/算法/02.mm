@@ -55,14 +55,14 @@ char* cencode(const char *s)
     return res;
 }
 
-int main(int argc, const char * argv[])
-{
-    string w = "we are happy.";
-    char* s = cencode(w.c_str());
-    printf("%s\n", s);
-    free(s);
-    s = nullptr;
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    string w = "we are happy.";
+//    char* s = cencode(w.c_str());
+//    printf("%s\n", s);
+//    free(s);
+//    s = nullptr;
+//    
+//    return 0;
+//}
 

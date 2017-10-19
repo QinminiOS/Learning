@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B9B8A0EA1F97A45C00920974 /* 01.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0E91F97A45C00920974 /* 01.mm */; };
 		B9B8A0F11F97AB6F00920974 /* 02.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F01F97AB6F00920974 /* 02.mm */; };
+		B9B8A0F41F97B08100920974 /* 03.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F31F97B08100920974 /* 03.mm */; };
+		B9B8A0F61F97B1AE00920974 /* 04.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F51F97B1AE00920974 /* 04.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		B9B8A0E91F97A45C00920974 /* 01.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 01.mm; sourceTree = "<group>"; };
 		B9B8A0F01F97AB6F00920974 /* 02.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 02.mm; sourceTree = "<group>"; };
 		B9B8A0F21F97ABE200920974 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		B9B8A0F31F97B08100920974 /* 03.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 03.mm; sourceTree = "<group>"; };
+		B9B8A0F51F97B1AE00920974 /* 04.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 04.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B9B8A0F21F97ABE200920974 /* Common.h */,
 				B9B8A0E91F97A45C00920974 /* 01.mm */,
 				B9B8A0F01F97AB6F00920974 /* 02.mm */,
+				B9B8A0F31F97B08100920974 /* 03.mm */,
+				B9B8A0F51F97B1AE00920974 /* 04.m */,
 			);
 			path = "算法";
 			sourceTree = "<group>";
@@ -124,8 +130,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B8A0F41F97B08100920974 /* 03.mm in Sources */,
 				B9B8A0EA1F97A45C00920974 /* 01.mm in Sources */,
 				B9B8A0F11F97AB6F00920974 /* 02.mm in Sources */,
+				B9B8A0F61F97B1AE00920974 /* 04.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
