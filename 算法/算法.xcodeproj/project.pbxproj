@@ -11,6 +11,10 @@
 		B9B8A0F11F97AB6F00920974 /* 02.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F01F97AB6F00920974 /* 02.mm */; };
 		B9B8A0F41F97B08100920974 /* 03.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F31F97B08100920974 /* 03.mm */; };
 		B9B8A0F61F97B1AE00920974 /* 04.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F51F97B1AE00920974 /* 04.m */; };
+		B9B8A0F81F98565100920974 /* 06.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F71F98565100920974 /* 06.mm */; };
+		B9B8A0FA1F9880F800920974 /* 07.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F91F9880F800920974 /* 07.mm */; };
+		B9B8A0FC1F98883C00920974 /* 08.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0FB1F98883C00920974 /* 08.m */; };
+		B9B8A0FE1F9889F400920974 /* 09.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0FD1F9889F400920974 /* 09.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +36,10 @@
 		B9B8A0F21F97ABE200920974 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		B9B8A0F31F97B08100920974 /* 03.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 03.mm; sourceTree = "<group>"; };
 		B9B8A0F51F97B1AE00920974 /* 04.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 04.m; sourceTree = "<group>"; };
+		B9B8A0F71F98565100920974 /* 06.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 06.mm; sourceTree = "<group>"; };
+		B9B8A0F91F9880F800920974 /* 07.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 07.mm; sourceTree = "<group>"; };
+		B9B8A0FB1F98883C00920974 /* 08.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 08.m; sourceTree = "<group>"; };
+		B9B8A0FD1F9889F400920974 /* 09.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 09.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				B9B8A0F01F97AB6F00920974 /* 02.mm */,
 				B9B8A0F31F97B08100920974 /* 03.mm */,
 				B9B8A0F51F97B1AE00920974 /* 04.m */,
+				B9B8A0F71F98565100920974 /* 06.mm */,
+				B9B8A0F91F9880F800920974 /* 07.mm */,
+				B9B8A0FB1F98883C00920974 /* 08.m */,
+				B9B8A0FD1F9889F400920974 /* 09.m */,
 			);
 			path = "算法";
 			sourceTree = "<group>";
@@ -130,8 +142,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B8A0FE1F9889F400920974 /* 09.m in Sources */,
 				B9B8A0F41F97B08100920974 /* 03.mm in Sources */,
 				B9B8A0EA1F97A45C00920974 /* 01.mm in Sources */,
+				B9B8A0FC1F98883C00920974 /* 08.m in Sources */,
+				B9B8A0FA1F9880F800920974 /* 07.mm in Sources */,
+				B9B8A0F81F98565100920974 /* 06.mm in Sources */,
 				B9B8A0F11F97AB6F00920974 /* 02.mm in Sources */,
 				B9B8A0F61F97B1AE00920974 /* 04.m in Sources */,
 			);
