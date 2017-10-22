@@ -8,16 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-
 /**
- 输入一个矩阵，按照从外向里以顺时针的顺序依次扫印出每一个数字。
- */
-
-
-
-
-/**
- Description输入一个矩阵，按照从外向里以顺时针的顺序依次扫印出每一个数字
+  输入一个矩阵，按照从外向里以顺时针的顺序依次扫印出每一个数字
 
  @param mat 矩阵
  @param row 矩阵行数
@@ -64,10 +56,10 @@ int main(int argc, const char * argv[])
         12, 13, 14,  5,
         11, 16, 15,  6,
         10,  9,  8,  7,
-        11, 19, 18, 17,/Users/qinmin/Documents/学习/博客集/每日算法
+        11, 19, 18, 17,
     };
     
-    printMat(mat, 4, 4, 0);
+    printMat(mat, 5, 4, 0);
     
     printf("\n");
     
