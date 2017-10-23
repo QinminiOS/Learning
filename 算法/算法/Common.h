@@ -17,7 +17,15 @@
 #import <unordered_map>
 #import <list>
 #import <stack>
+#import <queue>
 
 using namespace std;
+
+typedef struct Tree {
+    int value;
+    struct Tree *left, *right;
+} Tree;
+
+void createTree(Tree **root, int *arr, int* i, int size);
 
 #endif /* Common_h */

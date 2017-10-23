@@ -54,7 +54,7 @@ void postTree(TreeNode *root)
     printf("%d ", root->value);
 }
 
-void createTree(TreeNode **root, int preOrder[], int pLen, int inOrder[], int inLen)
+void recreateTree(TreeNode **root, int preOrder[], int pLen, int inOrder[], int inLen)
 {
     *root = (TreeNode *)malloc(sizeof(TreeNode));
     (*root)->value = preOrder[0];
@@ -76,11 +76,11 @@ void createTree(TreeNode **root, int preOrder[], int pLen, int inOrder[], int in
         int rightLen = inLen - leftLen - 1;
         
         if (leftLen > 0) {
-            createTree(&(*root)->left, preOrder+1, leftLen, inOrder, leftLen);
+            recreateTree(&(*root)->left, preOrder+1, leftLen, inOrder, leftLen);
         }
         
         if (rightLen > 0) {
-            createTree(&(*root)->right, preOrder+1+leftLen, rightLen, inOrder+leftLen+1, rightLen);
+            recreateTree(&(*root)->right, preOrder+1+leftLen, rightLen, inOrder+leftLen+1, rightLen);
         }
     }
 }
@@ -96,7 +96,7 @@ void createTree(TreeNode **root, int preOrder[], int pLen, int inOrder[], int in
 ////       7         8
 //    
 //    TreeNode *root;
-//    createTree(&root, preOrder, sizeof(preOrder)/sizeof(preOrder[0]), inOrder, sizeof(inOrder)/sizeof(inOrder[0]));
+//    recreateTree(&root, preOrder, sizeof(preOrder)/sizeof(preOrder[0]), inOrder, sizeof(inOrder)/sizeof(inOrder[0]));
 //    inTree(root);
 //    printf("\n");
 //    

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B907266C1F997C3E008AD066 /* 10.m in Sources */ = {isa = PBXBuildFile; fileRef = B907266B1F997C3E008AD066 /* 10.m */; };
+		B91F285C1F9D73E700689DE3 /* 19.mm in Sources */ = {isa = PBXBuildFile; fileRef = B91F285B1F9D73E700689DE3 /* 19.mm */; };
+		B91F285E1F9D781800689DE3 /* 20.mm in Sources */ = {isa = PBXBuildFile; fileRef = B91F285D1F9D781800689DE3 /* 20.mm */; };
+		B91F28601F9DBA7B00689DE3 /* 22.mm in Sources */ = {isa = PBXBuildFile; fileRef = B91F285F1F9DBA7B00689DE3 /* 22.mm */; };
+		B91F28621F9DC87200689DE3 /* tree.mm in Sources */ = {isa = PBXBuildFile; fileRef = B91F28611F9DC87200689DE3 /* tree.mm */; };
 		B950D8201F9A000400DFD910 /* 14.m in Sources */ = {isa = PBXBuildFile; fileRef = B950D81F1F9A000400DFD910 /* 14.m */; };
 		B950D8221F9A00AC00DFD910 /* 15.m in Sources */ = {isa = PBXBuildFile; fileRef = B950D8211F9A00AC00DFD910 /* 15.m */; };
 		B9B8A0EA1F97A45C00920974 /* 01.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0E91F97A45C00920974 /* 01.mm */; };
@@ -22,6 +26,8 @@
 		B9BC78481F99E06300F548B4 /* 12.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BC78471F99E06300F548B4 /* 12.m */; };
 		B9BC784A1F99F9A800F548B4 /* 13.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BC78491F99F9A800F548B4 /* 13.m */; };
 		B9D394641F9AD9E800CBBF66 /* 17.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D394631F9AD9E800CBBF66 /* 17.m */; };
+		B9D394661F9C35AA00CBBF66 /* 18.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9D394651F9C35AA00CBBF66 /* 18.mm */; };
+		B9D394681F9D458700CBBF66 /* sort.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9D394671F9D458700CBBF66 /* sort.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		B907266B1F997C3E008AD066 /* 10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 10.m; sourceTree = "<group>"; };
+		B91F285B1F9D73E700689DE3 /* 19.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 19.mm; sourceTree = "<group>"; };
+		B91F285D1F9D781800689DE3 /* 20.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 20.mm; sourceTree = "<group>"; };
+		B91F285F1F9DBA7B00689DE3 /* 22.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 22.mm; sourceTree = "<group>"; };
+		B91F28611F9DC87200689DE3 /* tree.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = tree.mm; sourceTree = "<group>"; };
 		B950D81F1F9A000400DFD910 /* 14.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 14.m; sourceTree = "<group>"; };
 		B950D8211F9A00AC00DFD910 /* 15.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 15.m; sourceTree = "<group>"; };
 		B9B8A0E61F97A45C00920974 /* 算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "算法"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +64,8 @@
 		B9BC78471F99E06300F548B4 /* 12.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 12.m; sourceTree = "<group>"; };
 		B9BC78491F99F9A800F548B4 /* 13.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 13.m; sourceTree = "<group>"; };
 		B9D394631F9AD9E800CBBF66 /* 17.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 17.m; sourceTree = "<group>"; };
+		B9D394651F9C35AA00CBBF66 /* 18.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 18.mm; sourceTree = "<group>"; };
+		B9D394671F9D458700CBBF66 /* sort.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = sort.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				B9B8A0F21F97ABE200920974 /* Common.h */,
+				B9D394671F9D458700CBBF66 /* sort.mm */,
+				B91F28611F9DC87200689DE3 /* tree.mm */,
 				B9B8A0E91F97A45C00920974 /* 01.mm */,
 				B9B8A0F01F97AB6F00920974 /* 02.mm */,
 				B9B8A0F31F97B08100920974 /* 03.mm */,
@@ -102,6 +116,10 @@
 				B950D81F1F9A000400DFD910 /* 14.m */,
 				B950D8211F9A00AC00DFD910 /* 15.m */,
 				B9D394631F9AD9E800CBBF66 /* 17.m */,
+				B9D394651F9C35AA00CBBF66 /* 18.mm */,
+				B91F285B1F9D73E700689DE3 /* 19.mm */,
+				B91F285D1F9D781800689DE3 /* 20.mm */,
+				B91F285F1F9DBA7B00689DE3 /* 22.mm */,
 			);
 			path = "算法";
 			sourceTree = "<group>";
@@ -165,15 +183,21 @@
 			files = (
 				B9B8A0FE1F9889F400920974 /* 09.m in Sources */,
 				B9B8A0F41F97B08100920974 /* 03.mm in Sources */,
+				B91F28621F9DC87200689DE3 /* tree.mm in Sources */,
 				B9B8A0EA1F97A45C00920974 /* 01.mm in Sources */,
 				B9BC78461F99C68D00F548B4 /* 11.m in Sources */,
 				B9B8A0FC1F98883C00920974 /* 08.m in Sources */,
 				B950D8221F9A00AC00DFD910 /* 15.m in Sources */,
+				B9D394681F9D458700CBBF66 /* sort.mm in Sources */,
+				B91F28601F9DBA7B00689DE3 /* 22.mm in Sources */,
 				B9D394641F9AD9E800CBBF66 /* 17.m in Sources */,
 				B907266C1F997C3E008AD066 /* 10.m in Sources */,
+				B9D394661F9C35AA00CBBF66 /* 18.mm in Sources */,
 				B9BC78481F99E06300F548B4 /* 12.m in Sources */,
 				B9BC784A1F99F9A800F548B4 /* 13.m in Sources */,
 				B950D8201F9A000400DFD910 /* 14.m in Sources */,
+				B91F285E1F9D781800689DE3 /* 20.mm in Sources */,
+				B91F285C1F9D73E700689DE3 /* 19.mm in Sources */,
 				B9B8A0FA1F9880F800920974 /* 07.mm in Sources */,
 				B9B8A0F81F98565100920974 /* 06.mm in Sources */,
 				B9B8A0F11F97AB6F00920974 /* 02.mm in Sources */,

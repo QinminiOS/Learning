@@ -48,20 +48,21 @@ void printMat(int *mat, int row, int col, int deep)
 }
 
 
-int main(int argc, const char * argv[])
-{
-    
-    int mat[] = {
-         1,  2,  3,  4,
-        12, 13, 14,  5,
-        11, 16, 15,  6,
-        10,  9,  8,  7,
-        11, 19, 18, 17,
-    };
-    
-    printMat(mat, 5, 4, 0);
-    
-    printf("\n");
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    
+//    int mat[] = {
+//         1,  2,  3,  4,
+//        12, 13, 14,  5,
+//        11, 16, 15,  6,
+//        10,  9,  8,  7,
+//        11, 19, 18, 17,
+//    };
+//    
+//    printMat(mat, 5, 4, 0);
+//    
+//    printf("\n");
+//    
+//    return 0;
+//}
+
