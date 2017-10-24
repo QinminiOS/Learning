@@ -112,14 +112,15 @@ void postVisit(Tree *root)
 
  */
 
-int main(int argc, const char * argv[])
-{
-    Tree *root;
-    int i = 0;
-    int a[] = {1,2,4,-1,-1,5,-1,-1,3,6,-1,-1,7,-1,-1};
-    createTree(&root, a, &i, sizeof(a)/sizeof(*a));
-    
-    postVisit(root);
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    Tree *root;
+//    int i = 0;
+//    int a[] = {1,2,4,-1,-1,5,-1,-1,3,6,-1,-1,7,-1,-1};
+//    createTree(&root, a, &i, sizeof(a)/sizeof(*a));
+//    
+//    postVisit(root);
+//    
+//    return 0;
+//}
+
