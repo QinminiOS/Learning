@@ -48,13 +48,14 @@ void permutation1(char *str, char chars[], int i)
     }
 }
 
-int main(int argc, const char * argv[])
-{
-    
-    char str[] = "abc";
-    permutation(str, 0);
-    
-    printf("\n");
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    
+//    char str[] = "abc";
+//    permutation(str, 0);
+//    
+//    printf("\n");
+//    
+//    return 0;
+//}
+
