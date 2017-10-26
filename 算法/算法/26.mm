@@ -40,11 +40,12 @@ int findNumber(const vector<int>& v)
         return INT_MAX;
     }
 }
+//
+//int main(int argc, const char * argv[])
+//{
+//    vector<int> v = {3,3,3,3,5,5,5,6,3,5,5,5,5,5};
+//    printf("%d\n", findNumber(v));
+//    
+//    return 0;
+//}
 
-int main(int argc, const char * argv[])
-{
-    vector<int> v = {3,3,3,3,5,5,5,6,3,5,5,5,5,5};
-    printf("%d\n", findNumber(v));
-    
-    return 0;
-}
