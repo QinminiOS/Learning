@@ -103,6 +103,40 @@ void mergeSort(int *a, int* outa, int length)
     divide(a, outa, 0, length-1);
 }
 
+///////////////// 快速排序 ///////////////////////////////
+int partition(int *a, int left, int right)
+{
+    int tmp = a[left];
+    
+    while (left < right) {
+        while (tmp <= a[right] && left < right) {
+            right--;
+        }
+        
+        a[left] = a[right];
+        
+        while (tmp >= a[left] && left < right) {
+            left++;
+        }
+        
+        a[right] = a[left];
+    }
+    
+    a[left] = tmp;
+    
+    return left;
+}
+
+void quickSort(int *a, int left, int right)
+{
+    int pivot;
+    if (left < right) {
+        pivot = partition(a, left, right);
+        quickSort(a, left, pivot-1);
+        quickSort(a, pivot+1, right);
+    }
+}
+
 //////////////////main///////////////////////
 //int main(int argc, const char * argv[])
 //{

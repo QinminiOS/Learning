@@ -26,7 +26,7 @@
 		B9B8A0FC1F98883C00920974 /* 08.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0FB1F98883C00920974 /* 08.m */; };
 		B9B8A0FE1F9889F400920974 /* 09.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0FD1F9889F400920974 /* 09.m */; };
 		B9B8B2E21FA0B4F600971C1F /* 26.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8B2E11FA0B4F600971C1F /* 26.mm */; };
-		B9B8B2E41FA0C7EE00971C1F /* 27.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8B2E31FA0C7EE00971C1F /* 27.mm */; };
+		B9B8B2E41FA0C7EE00971C1F /* 27.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8B2E31FA0C7EE00971C1F /* 27.m */; };
 		B9BC78461F99C68D00F548B4 /* 11.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BC78451F99C68D00F548B4 /* 11.m */; };
 		B9BC78481F99E06300F548B4 /* 12.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BC78471F99E06300F548B4 /* 12.m */; };
 		B9BC784A1F99F9A800F548B4 /* 13.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BC78491F99F9A800F548B4 /* 13.m */; };
@@ -69,7 +69,7 @@
 		B9B8A0FB1F98883C00920974 /* 08.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 08.m; sourceTree = "<group>"; };
 		B9B8A0FD1F9889F400920974 /* 09.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 09.m; sourceTree = "<group>"; };
 		B9B8B2E11FA0B4F600971C1F /* 26.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 26.mm; sourceTree = "<group>"; };
-		B9B8B2E31FA0C7EE00971C1F /* 27.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 27.mm; sourceTree = "<group>"; };
+		B9B8B2E31FA0C7EE00971C1F /* 27.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 27.m; sourceTree = "<group>"; };
 		B9BC78451F99C68D00F548B4 /* 11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 11.m; sourceTree = "<group>"; };
 		B9BC78471F99E06300F548B4 /* 12.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 12.m; sourceTree = "<group>"; };
 		B9BC78491F99F9A800F548B4 /* 13.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 13.m; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				B92AE34F1F9F18E200A99214 /* 23.mm */,
 				B92AE3511F9F308300A99214 /* 25.m */,
 				B9B8B2E11FA0B4F600971C1F /* 26.mm */,
-				B9B8B2E31FA0C7EE00971C1F /* 27.mm */,
+				B9B8B2E31FA0C7EE00971C1F /* 27.m */,
 				B934BB981FA225BA00011B09 /* 28.m */,
 			);
 			path = "算法";
@@ -204,7 +204,7 @@
 				B934BB991FA225BA00011B09 /* 28.m in Sources */,
 				B9BC78461F99C68D00F548B4 /* 11.m in Sources */,
 				B9B8A0FC1F98883C00920974 /* 08.m in Sources */,
-				B9B8B2E41FA0C7EE00971C1F /* 27.mm in Sources */,
+				B9B8B2E41FA0C7EE00971C1F /* 27.m in Sources */,
 				B950D8221F9A00AC00DFD910 /* 15.m in Sources */,
 				B9D394681F9D458700CBBF66 /* sort.mm in Sources */,
 				B91F28601F9DBA7B00689DE3 /* 22.mm in Sources */,

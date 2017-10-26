@@ -34,9 +34,10 @@ int addSubArray(int *arr, int len)
     return max;
 }
 
-int main(int argc, const char * argv[])
-{
-    int a[] = {1, -2, 3, 10, -4, 7, 2, -5};
-    printf("%d\n", addSubArray(a, 8));
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    int a[] = {1, -2, 3, 10, -4, 7, 2, -5};
+//    printf("%d\n", addSubArray(a, 8));
+//    return 0;
+//}
+
