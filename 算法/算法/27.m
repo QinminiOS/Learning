@@ -105,14 +105,14 @@ void findTheKNumber2(int *a, int len, int k)
     printf("\n");
 }
 
-int main(int argc, const char * argv[])
-{
-    int a[] = {0, 4, 5, 1, 6, 2, 7, 3, 8};
-    findTheKNumber(a, 9, 4);
-    
-    int b[] = {0, 4, 5, 1, 6, 2, 7, 3, 8};
-    findTheKNumber2(b, 9, 4);
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    int a[] = {0, 4, 5, 1, 6, 2, 7, 3, 8};
+//    findTheKNumber(a, 9, 4);
+//    
+//    int b[] = {0, 4, 5, 1, 6, 2, 7, 3, 8};
+//    findTheKNumber2(b, 9, 4);
+//    
+//    return 0;
+//}
 
