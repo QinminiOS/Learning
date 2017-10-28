@@ -90,17 +90,18 @@ char* testMalloc()
     return a - 10;
 }
 
-int main(int argc, const char * argv[])
-{
-    
-    int a[] = {3, 32, 321};
-    minNumber(a, 3);
-    
-    char *b = testMalloc();
-//    free(b);
-    
-    int64_t c = (int64_t)b;
-    free((int *)c);
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    
+//    int a[] = {3, 32, 321};
+//    minNumber(a, 3);
+//    
+//    char *b = testMalloc();
+////    free(b);
+//    
+//    int64_t c = (int64_t)b;
+//    free((int *)c);
+//    
+//    return 0;
+//}
+
