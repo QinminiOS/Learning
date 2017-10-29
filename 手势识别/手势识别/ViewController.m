@@ -20,7 +20,7 @@ NSString * const TableViewCellReuseIdentifier = @"TableViewCellReuseIdentifier";
 {
     [super viewDidLoad];
  
-    [self test2OnView:_rectView];
+    [self test4OnView:_rectView];
 }
 
 /////////////////////// test1 ////////////////////////////////
@@ -61,7 +61,7 @@ NSString * const TableViewCellReuseIdentifier = @"TableViewCellReuseIdentifier";
 /////////////////// test2 ////////////////////////////
 - (void)test2OnView:(UIView *)view
 {
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onGestureRecognizerTrigger:)];
+    UITapGestureRecognizer *tap = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(onGestureRecognizerTrigger:)];
     tap.delegate = self;
     tap.delegate = self;
     [view addGestureRecognizer:tap];
@@ -101,6 +101,43 @@ NSString * const TableViewCellReuseIdentifier = @"TableViewCellReuseIdentifier";
     }
     
     return YES;
+}
+
+/////////////////// test3 ////////////////////////////
+- (void)test3OnView:(UIView *)view
+{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onGestureRecognizerTrigger:)];
+    [view addGestureRecognizer:tap];
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
+    button.backgroundColor = [UIColor orangeColor];
+    [button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//    [button addGestureRecognizer:tap];
+    [view addSubview:button];
+}
+
+- (void)buttonTapped:(UIButton *)button
+{
+    NSLog(@"%@", [button class]);
+}
+
+/////////////////// test4 ////////////////////////////
+- (void)test4OnView:(UIView *)view
+{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onGestureRecognizerTrigger:)];
+    [view addGestureRecognizer:tap];
+    
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onGestureRecognizerTrigger1:)];
+    UIView *button = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
+    button.backgroundColor = [UIColor orangeColor];
+    [button addGestureRecognizer:tap1];
+    
+    [view addSubview:button];
+}
+
+- (void)onGestureRecognizerTrigger1:(UIGestureRecognizer *)gestureRecognizer
+{
+    NSLog(@"%@", [gestureRecognizer class]);
 }
 
 @end
