@@ -36,9 +36,10 @@ char findchar(const char *str)
     return '0';
 }
 
-int main(int argc, const char * argv[])
-{
-    const char *str = "hello world";
-    printf("%c\n", findchar(str));
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    const char *str = "hello world";
+//    printf("%c\n", findchar(str));
+//    return 0;
+//}
+

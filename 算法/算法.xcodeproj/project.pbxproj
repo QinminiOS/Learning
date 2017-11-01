@@ -20,6 +20,7 @@
 		B950D8221F9A00AC00DFD910 /* 15.m in Sources */ = {isa = PBXBuildFile; fileRef = B950D8211F9A00AC00DFD910 /* 15.m */; };
 		B983EFA81FA768A2002F776C /* 31.m in Sources */ = {isa = PBXBuildFile; fileRef = B983EFA71FA768A2002F776C /* 31.m */; };
 		B983EFAA1FA76D97002F776C /* 32.mm in Sources */ = {isa = PBXBuildFile; fileRef = B983EFA91FA76D97002F776C /* 32.mm */; };
+		B983EFAC1FA77247002F776C /* 33.m in Sources */ = {isa = PBXBuildFile; fileRef = B983EFAB1FA77247002F776C /* 33.m */; };
 		B9B8A0EA1F97A45C00920974 /* 01.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0E91F97A45C00920974 /* 01.mm */; };
 		B9B8A0F11F97AB6F00920974 /* 02.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F01F97AB6F00920974 /* 02.mm */; };
 		B9B8A0F41F97B08100920974 /* 03.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B8A0F31F97B08100920974 /* 03.mm */; };
@@ -64,6 +65,7 @@
 		B950D8211F9A00AC00DFD910 /* 15.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 15.m; sourceTree = "<group>"; };
 		B983EFA71FA768A2002F776C /* 31.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 31.m; sourceTree = "<group>"; };
 		B983EFA91FA76D97002F776C /* 32.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 32.mm; sourceTree = "<group>"; };
+		B983EFAB1FA77247002F776C /* 33.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 33.m; sourceTree = "<group>"; };
 		B9B8A0E61F97A45C00920974 /* 算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B8A0E91F97A45C00920974 /* 01.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 01.mm; sourceTree = "<group>"; };
 		B9B8A0F01F97AB6F00920974 /* 02.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 02.mm; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				B934BB9C1FA40EFD00011B09 /* 30.m */,
 				B983EFA71FA768A2002F776C /* 31.m */,
 				B983EFA91FA76D97002F776C /* 32.mm */,
+				B983EFAB1FA77247002F776C /* 33.m */,
 			);
 			path = "算法";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				B9BC78481F99E06300F548B4 /* 12.m in Sources */,
 				B9BC784A1F99F9A800F548B4 /* 13.m in Sources */,
 				B950D8201F9A000400DFD910 /* 14.m in Sources */,
+				B983EFAC1FA77247002F776C /* 33.m in Sources */,
 				B91F285E1F9D781800689DE3 /* 20.mm in Sources */,
 				B91F285C1F9D73E700689DE3 /* 19.mm in Sources */,
 				B9B8A0FA1F9880F800920974 /* 07.mm in Sources */,
