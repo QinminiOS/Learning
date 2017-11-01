@@ -61,7 +61,7 @@ NSString * const TableViewCellReuseIdentifier = @"TableViewCellReuseIdentifier";
 /////////////////// test2 ////////////////////////////
 - (void)test2OnView:(UIView *)view
 {
-    UITapGestureRecognizer *tap = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(onGestureRecognizerTrigger:)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onGestureRecognizerTrigger:)];
     tap.delegate = self;
     tap.delegate = self;
     [view addGestureRecognizer:tap];
@@ -112,7 +112,6 @@ NSString * const TableViewCellReuseIdentifier = @"TableViewCellReuseIdentifier";
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
     button.backgroundColor = [UIColor orangeColor];
     [button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
-//    [button addGestureRecognizer:tap];
     [view addSubview:button];
 }
 
@@ -137,7 +136,7 @@ NSString * const TableViewCellReuseIdentifier = @"TableViewCellReuseIdentifier";
 
 - (void)onGestureRecognizerTrigger1:(UIGestureRecognizer *)gestureRecognizer
 {
-    NSLog(@"%@", [gestureRecognizer class]);
+    NSLog(@"%s", __func__);
 }
 
 @end
