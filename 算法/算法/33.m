@@ -82,12 +82,13 @@ void findDesPairs(int *a, int len)
     printf("\n");
 }
 
-int main(int argc, const char * argv[])
-{
-    
-    int a[] = {7, 5, 6, 4, 1};
-    
-    findDesPairs(a, sizeof(a)/sizeof(*a));
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    
+//    int a[] = {7, 5, 6, 4, 1};
+//    
+//    findDesPairs(a, sizeof(a)/sizeof(*a));
+//    
+//    return 0;
+//}
+

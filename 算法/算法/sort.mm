@@ -58,49 +58,50 @@ void heapSort(int *a, int length)
 }
 
 ////////////////////////////归并排序//////////////////////////////////////
-void merge(int *a, int *tmp, int s, int c, int e)
+void merge(int *a, int first, int center, int last, int *tmp)
 {
-    // [s .. c] [c .. e]
-    int m, i, j;
-    for (i = s, j = c, m = s; i <= c && j <= e; ) {
-        if (a[i] <= a[j]) {
-            tmp[m++] = a[i++];
+    // [f .. c] [c .. l]
+    int j = first;
+    int i = center + 1;
+    int m = first;
+    
+    while (first <= center && i <= last) {
+        if (a[first] <= a[i]) {
+            tmp[m++] = a[first++];
         }else {
-            tmp[m++] = a[j++];
+            tmp[m++] = a[i++];
         }
     }
     
-    if (i <= c) {
-        for (int k = 0; k <= m-i; k++) {
-            tmp[m++] = a[k];
-        }
+    while (i <= last) {
+        tmp[m++] = a[i++];
     }
     
-    if (j <= e) {
-        for (int k = j; k <= e; k++) {
-            tmp[m++] = a[k];
-        }
+    while (first <= center) {
+        tmp[m++] = a[first++];
     }
-}
-
-void divide(int *a, int *tmp, int s, int e)
-{
     
-    if (s == e) {
-        tmp[s] = a[s];
-    }else {
-        int tmp1[e+1];
-        int m = (s+e)/2;
-        divide(a, tmp1, s, m);
-        divide(a, tmp1, m+1, e);
-        merge(tmp1, tmp, s, m, e);
+    while (j <= last) {
+        a[j] = tmp[j];
+        j++;
     }
     
 }
 
-void mergeSort(int *a, int* outa, int length)
+void divide(int *a, int first, int last, int *tmp)
 {
-    divide(a, outa, 0, length-1);
+    if (first < last) {
+        int center = (first + last)/2;
+        divide(a, first, center, tmp);
+        divide(a, center+1, last, tmp);
+        merge(a, first, center, last, tmp);
+    }
+    
+}
+
+void mergeSort(int *a, int* buffer, int length)
+{
+    divide(a, 0, length-1, buffer);
 }
 
 ///////////////// 快速排序 ///////////////////////////////
@@ -138,19 +139,19 @@ void quickSort(int *a, int left, int right)
 }
 
 //////////////////main///////////////////////
-//int main(int argc, const char * argv[])
-//{
-//    int a[] = {0, 1, 4, 3, 2, 5, 6, 10, 8, 7, 9};
-//    
-//    int b[11];
-//    mergeSort(a, b, sizeof(a)/sizeof(*a));
-//    printArr(b, 11);
-//    
-//    //heapSort(a, sizeof(a)/sizeof(*a));
-//    //printArr(a, sizeof(a)/sizeof(*a));
-//    
-//    return 0;
-//}
+int main(int argc, const char * argv[])
+{
+    int a[] = {0, 1, 4, 3, 2, 5, 6, 10, 8, 7, 9};
+    
+    int buffer[11];
+    mergeSort(a, buffer, sizeof(a)/sizeof(*a));
+    printArr(a, sizeof(a)/sizeof(*a));
+    
+    //heapSort(a, sizeof(a)/sizeof(*a));
+    //printArr(a, sizeof(a)/sizeof(*a));
+    
+    return 0;
+}
 
 
 
