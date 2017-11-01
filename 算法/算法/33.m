@@ -23,7 +23,20 @@ void merge(int *a, int l, int p, int r, int *tmp)
     
     int m = r;
     int n = p;
-
+    
+    // 逆序对
+    for (int s = p, t = r; s >= l && t > p;) {
+        if (a[s] > a[t]) {
+            int tt = t;
+            while (tt > p) {
+                printf("%d - %d\n", a[s], a[tt--]);
+            }
+            s--;
+        }else {
+            t--;
+        }
+    }
+    
     while (n >= l && r > p) {
         if (a[n] >= a[r]) {
             tmp[m--] = a[n--];
@@ -62,9 +75,9 @@ void findDesPairs(int *a, int len)
     int tmp[len];
     mergeFind(a, 0, len-1, tmp);
     
-    for (int i = 0; i < len; i++) {
-        printf("%d ", a[i]);
-    }
+//    for (int i = 0; i < len; i++) {
+//        printf("%d ", a[i]);
+//    }
     
     printf("\n");
 }
@@ -72,7 +85,7 @@ void findDesPairs(int *a, int len)
 int main(int argc, const char * argv[])
 {
     
-    int a[] = {7, 5, 6, 4};
+    int a[] = {7, 5, 6, 4, 1};
     
     findDesPairs(a, sizeof(a)/sizeof(*a));
     
