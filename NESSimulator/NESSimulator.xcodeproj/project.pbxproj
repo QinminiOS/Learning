@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B1B4E11F00AF6B00CC4789 /* JoyStickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1B4E01F00AF6B00CC4789 /* JoyStickView.m */; };
+		04B1B4E51F00AF7100CC4789 /* stick_base.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B1B4E21F00AF7100CC4789 /* stick_base.png */; };
+		04B1B4E61F00AF7100CC4789 /* stick_hold.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B1B4E31F00AF7100CC4789 /* stick_hold.png */; };
+		04B1B4E71F00AF7100CC4789 /* stick_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B1B4E41F00AF7100CC4789 /* stick_normal.png */; };
+		B91E03961F2AE559005E96EE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E03951F2AE558005E96EE /* AVFoundation.framework */; };
+		B91E03981F2AEB02005E96EE /* 6.nes in Resources */ = {isa = PBXBuildFile; fileRef = B91E03971F2AEA99005E96EE /* 6.nes */; };
+		B91E039B1F2AF911005E96EE /* OpenALPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B91E039A1F2AF911005E96EE /* OpenALPlayer.m */; };
+		B9739F281EF4E02E00E54B23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9739F271EF4E02E00E54B23 /* main.m */; };
+		B9739F2B1EF4E02E00E54B23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9739F2A1EF4E02E00E54B23 /* AppDelegate.m */; };
+		B9739F2E1EF4E02E00E54B23 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9739F2D1EF4E02E00E54B23 /* ViewController.mm */; };
+		B9739F311EF4E02E00E54B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9739F2F1EF4E02E00E54B23 /* Main.storyboard */; };
+		B9739F331EF4E02E00E54B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9739F321EF4E02E00E54B23 /* Assets.xcassets */; };
+		B9739F361EF4E02E00E54B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9739F341EF4E02E00E54B23 /* LaunchScreen.storyboard */; };
+		B9739F411EF4E02F00E54B23 /* NesSimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9739F401EF4E02F00E54B23 /* NesSimulatorTests.m */; };
+		B9739F4C1EF4E02F00E54B23 /* NesSimulatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9739F4B1EF4E02F00E54B23 /* NesSimulatorUITests.m */; };
+		B9739F6A1EF4E07F00E54B23 /* InfoNES.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9739F5A1EF4E07F00E54B23 /* InfoNES.cpp */; };
+		B9739F6E1EF4E07F00E54B23 /* InfoNES_Mapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9739F5F1EF4E07F00E54B23 /* InfoNES_Mapper.cpp */; };
+		B9739F6F1EF4E07F00E54B23 /* InfoNES_pAPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9739F611EF4E07F00E54B23 /* InfoNES_pAPU.cpp */; };
+		B9739F711EF4E07F00E54B23 /* K6502.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9739F661EF4E07F00E54B23 /* K6502.cpp */; };
+		B9739F731EF4E0B300E54B23 /* InfoNES_System_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9739F721EF4E0B300E54B23 /* InfoNES_System_iOS.mm */; };
+		B9739F751EF4E5D800E54B23 /* 4.nes in Resources */ = {isa = PBXBuildFile; fileRef = B9739F741EF4E5D800E54B23 /* 4.nes */; };
+		B9739F7D1EF4EC6E00E54B23 /* QMImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B9739F781EF4EC6E00E54B23 /* QMImageHelper.m */; };
+		B9739FC61EF4F35500E54B23 /* compare.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739F9B1EF4F35500E54B23 /* compare.cc */; };
+		B9739FC71EF4F35500E54B23 /* compare_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739F9C1EF4F35500E54B23 /* compare_common.cc */; };
+		B9739FC81EF4F35500E54B23 /* compare_gcc.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739F9D1EF4F35500E54B23 /* compare_gcc.cc */; };
+		B9739FC91EF4F35500E54B23 /* compare_neon.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739F9E1EF4F35500E54B23 /* compare_neon.cc */; };
+		B9739FCA1EF4F35500E54B23 /* compare_neon64.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739F9F1EF4F35500E54B23 /* compare_neon64.cc */; };
+		B9739FCB1EF4F35500E54B23 /* compare_win.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA01EF4F35500E54B23 /* compare_win.cc */; };
+		B9739FCC1EF4F35500E54B23 /* convert.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA11EF4F35500E54B23 /* convert.cc */; };
+		B9739FCD1EF4F35500E54B23 /* convert_argb.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA21EF4F35500E54B23 /* convert_argb.cc */; };
+		B9739FCE1EF4F35500E54B23 /* convert_from.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA31EF4F35500E54B23 /* convert_from.cc */; };
+		B9739FCF1EF4F35500E54B23 /* convert_from_argb.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA41EF4F35500E54B23 /* convert_from_argb.cc */; };
+		B9739FD01EF4F35500E54B23 /* convert_jpeg.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA51EF4F35500E54B23 /* convert_jpeg.cc */; };
+		B9739FD11EF4F35500E54B23 /* convert_to_argb.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA61EF4F35500E54B23 /* convert_to_argb.cc */; };
+		B9739FD21EF4F35500E54B23 /* convert_to_i420.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA71EF4F35500E54B23 /* convert_to_i420.cc */; };
+		B9739FD31EF4F35500E54B23 /* cpu_id.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA81EF4F35500E54B23 /* cpu_id.cc */; };
+		B9739FD41EF4F35500E54B23 /* mjpeg_decoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FA91EF4F35500E54B23 /* mjpeg_decoder.cc */; };
+		B9739FD51EF4F35500E54B23 /* mjpeg_validate.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FAA1EF4F35500E54B23 /* mjpeg_validate.cc */; };
+		B9739FD61EF4F35500E54B23 /* planar_functions.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FAB1EF4F35500E54B23 /* planar_functions.cc */; };
+		B9739FD71EF4F35500E54B23 /* rotate.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FAC1EF4F35500E54B23 /* rotate.cc */; };
+		B9739FD81EF4F35500E54B23 /* rotate_any.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FAD1EF4F35500E54B23 /* rotate_any.cc */; };
+		B9739FD91EF4F35500E54B23 /* rotate_argb.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FAE1EF4F35500E54B23 /* rotate_argb.cc */; };
+		B9739FDA1EF4F35500E54B23 /* rotate_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FAF1EF4F35500E54B23 /* rotate_common.cc */; };
+		B9739FDB1EF4F35500E54B23 /* rotate_gcc.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB01EF4F35500E54B23 /* rotate_gcc.cc */; };
+		B9739FDC1EF4F35500E54B23 /* rotate_mips.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB11EF4F35500E54B23 /* rotate_mips.cc */; };
+		B9739FDD1EF4F35500E54B23 /* rotate_neon.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB21EF4F35500E54B23 /* rotate_neon.cc */; };
+		B9739FDE1EF4F35500E54B23 /* rotate_neon64.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB31EF4F35500E54B23 /* rotate_neon64.cc */; };
+		B9739FDF1EF4F35500E54B23 /* rotate_win.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB41EF4F35500E54B23 /* rotate_win.cc */; };
+		B9739FE01EF4F35500E54B23 /* row_any.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB51EF4F35500E54B23 /* row_any.cc */; };
+		B9739FE11EF4F35500E54B23 /* row_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB61EF4F35500E54B23 /* row_common.cc */; };
+		B9739FE21EF4F35500E54B23 /* row_gcc.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB71EF4F35500E54B23 /* row_gcc.cc */; };
+		B9739FE31EF4F35500E54B23 /* row_mips.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB81EF4F35500E54B23 /* row_mips.cc */; };
+		B9739FE41EF4F35500E54B23 /* row_neon.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FB91EF4F35500E54B23 /* row_neon.cc */; };
+		B9739FE51EF4F35500E54B23 /* row_neon64.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FBA1EF4F35500E54B23 /* row_neon64.cc */; };
+		B9739FE61EF4F35500E54B23 /* row_win.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FBB1EF4F35500E54B23 /* row_win.cc */; };
+		B9739FE71EF4F35500E54B23 /* scale.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FBC1EF4F35500E54B23 /* scale.cc */; };
+		B9739FE81EF4F35500E54B23 /* scale_any.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FBD1EF4F35500E54B23 /* scale_any.cc */; };
+		B9739FE91EF4F35500E54B23 /* scale_argb.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FBE1EF4F35500E54B23 /* scale_argb.cc */; };
+		B9739FEA1EF4F35500E54B23 /* scale_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FBF1EF4F35500E54B23 /* scale_common.cc */; };
+		B9739FEB1EF4F35500E54B23 /* scale_gcc.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FC01EF4F35500E54B23 /* scale_gcc.cc */; };
+		B9739FEC1EF4F35500E54B23 /* scale_mips.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FC11EF4F35500E54B23 /* scale_mips.cc */; };
+		B9739FED1EF4F35500E54B23 /* scale_neon.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FC21EF4F35500E54B23 /* scale_neon.cc */; };
+		B9739FEE1EF4F35500E54B23 /* scale_neon64.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FC31EF4F35500E54B23 /* scale_neon64.cc */; };
+		B9739FEF1EF4F35500E54B23 /* scale_win.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FC41EF4F35500E54B23 /* scale_win.cc */; };
+		B9739FF01EF4F35500E54B23 /* video_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = B9739FC51EF4F35500E54B23 /* video_common.cc */; };
+		B9739FF31EF5021F00E54B23 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B9739FF21EF5021F00E54B23 /* AudioPlayer.m */; };
+		B9739FF71EF5064B00E54B23 /* 1.nes in Resources */ = {isa = PBXBuildFile; fileRef = B9739FF41EF5064B00E54B23 /* 1.nes */; };
+		B9739FF81EF5064B00E54B23 /* 2.nes in Resources */ = {isa = PBXBuildFile; fileRef = B9739FF51EF5064B00E54B23 /* 2.nes */; };
+		B9739FF91EF5064B00E54B23 /* 3.nes in Resources */ = {isa = PBXBuildFile; fileRef = B9739FF61EF5064B00E54B23 /* 3.nes */; };
+		B973A0011EF5F8C000E54B23 /* nes_controller_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9739FFB1EF5F8C000E54B23 /* nes_controller_a@2x.png */; };
+		B973A0021EF5F8C000E54B23 /* nes_controller_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9739FFC1EF5F8C000E54B23 /* nes_controller_b@2x.png */; };
+		B973A0031EF5F8C000E54B23 /* nes_controller_dir@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9739FFD1EF5F8C000E54B23 /* nes_controller_dir@2x.png */; };
+		B973A0041EF5F8C000E54B23 /* nes_controller_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9739FFE1EF5F8C000E54B23 /* nes_controller_select@2x.png */; };
+		B973A0051EF5F8C000E54B23 /* nes_controller_start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9739FFF1EF5F8C000E54B23 /* nes_controller_start@2x.png */; };
+		B973A0061EF5F8C000E54B23 /* nes_dir@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B973A0001EF5F8C000E54B23 /* nes_dir@2x.png */; };
+		B973A0091EF6034F00E54B23 /* InfoNESHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = B973A0081EF6034F00E54B23 /* InfoNESHelper.mm */; };
+		B9EC40811F2E085A00E9A49A /* 5.nes in Resources */ = {isa = PBXBuildFile; fileRef = B9EC40801F2E083700E9A49A /* 5.nes */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9739F3D1EF4E02F00E54B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9739F1B1EF4E02E00E54B23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9739F221EF4E02E00E54B23;
+			remoteInfo = NesSimulator;
+		};
+		B9739F481EF4E02F00E54B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9739F1B1EF4E02E00E54B23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9739F221EF4E02E00E54B23;
+			remoteInfo = NesSimulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B1B4DF1F00AF6B00CC4789 /* JoyStickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyStickView.h; sourceTree = "<group>"; };
+		04B1B4E01F00AF6B00CC4789 /* JoyStickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoyStickView.m; sourceTree = "<group>"; };
+		04B1B4E21F00AF7100CC4789 /* stick_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stick_base.png; sourceTree = "<group>"; };
+		04B1B4E31F00AF7100CC4789 /* stick_hold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stick_hold.png; sourceTree = "<group>"; };
+		04B1B4E41F00AF7100CC4789 /* stick_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stick_normal.png; sourceTree = "<group>"; };
+		B91E03951F2AE558005E96EE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B91E03971F2AEA99005E96EE /* 6.nes */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.nes; sourceTree = "<group>"; };
+		B91E03991F2AF911005E96EE /* OpenALPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenALPlayer.h; sourceTree = "<group>"; };
+		B91E039A1F2AF911005E96EE /* OpenALPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenALPlayer.m; sourceTree = "<group>"; };
+		B9739F231EF4E02E00E54B23 /* NesSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NesSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9739F271EF4E02E00E54B23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9739F291EF4E02E00E54B23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9739F2A1EF4E02E00E54B23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9739F2C1EF4E02E00E54B23 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9739F2D1EF4E02E00E54B23 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		B9739F301EF4E02E00E54B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9739F321EF4E02E00E54B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9739F351EF4E02E00E54B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9739F371EF4E02E00E54B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9739F3C1EF4E02F00E54B23 /* NesSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NesSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9739F401EF4E02F00E54B23 /* NesSimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NesSimulatorTests.m; sourceTree = "<group>"; };
+		B9739F421EF4E02F00E54B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9739F471EF4E02F00E54B23 /* NesSimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NesSimulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9739F4B1EF4E02F00E54B23 /* NesSimulatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NesSimulatorUITests.m; sourceTree = "<group>"; };
+		B9739F4D1EF4E02F00E54B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9739F5A1EF4E07F00E54B23 /* InfoNES.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InfoNES.cpp; sourceTree = "<group>"; };
+		B9739F5B1EF4E07F00E54B23 /* InfoNES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoNES.h; sourceTree = "<group>"; };
+		B9739F5F1EF4E07F00E54B23 /* InfoNES_Mapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InfoNES_Mapper.cpp; sourceTree = "<group>"; };
+		B9739F601EF4E07F00E54B23 /* InfoNES_Mapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoNES_Mapper.h; sourceTree = "<group>"; };
+		B9739F611EF4E07F00E54B23 /* InfoNES_pAPU.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InfoNES_pAPU.cpp; sourceTree = "<group>"; };
+		B9739F621EF4E07F00E54B23 /* InfoNES_pAPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoNES_pAPU.h; sourceTree = "<group>"; };
+		B9739F631EF4E07F00E54B23 /* InfoNES_System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoNES_System.h; sourceTree = "<group>"; };
+		B9739F651EF4E07F00E54B23 /* InfoNES_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoNES_Types.h; sourceTree = "<group>"; };
+		B9739F661EF4E07F00E54B23 /* K6502.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = K6502.cpp; sourceTree = "<group>"; };
+		B9739F671EF4E07F00E54B23 /* K6502.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = K6502.h; sourceTree = "<group>"; };
+		B9739F681EF4E07F00E54B23 /* K6502_rw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = K6502_rw.h; sourceTree = "<group>"; };
+		B9739F691EF4E07F00E54B23 /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
+		B9739F721EF4E0B300E54B23 /* InfoNES_System_iOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InfoNES_System_iOS.mm; sourceTree = "<group>"; };
+		B9739F741EF4E5D800E54B23 /* 4.nes */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.nes; sourceTree = "<group>"; };
+		B9739F771EF4EC6E00E54B23 /* QMImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMImageHelper.h; sourceTree = "<group>"; };
+		B9739F781EF4EC6E00E54B23 /* QMImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMImageHelper.m; sourceTree = "<group>"; };
+		B9739F841EF4ECA800E54B23 /* basic_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_types.h; sourceTree = "<group>"; };
+		B9739F851EF4ECA800E54B23 /* compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
+		B9739F861EF4ECA800E54B23 /* convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert.h; sourceTree = "<group>"; };
+		B9739F871EF4ECA800E54B23 /* convert_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_argb.h; sourceTree = "<group>"; };
+		B9739F881EF4ECA800E54B23 /* convert_from.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from.h; sourceTree = "<group>"; };
+		B9739F891EF4ECA800E54B23 /* convert_from_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from_argb.h; sourceTree = "<group>"; };
+		B9739F8A1EF4ECA800E54B23 /* cpu_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_id.h; sourceTree = "<group>"; };
+		B9739F8B1EF4ECA800E54B23 /* format_conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format_conversion.h; sourceTree = "<group>"; };
+		B9739F8C1EF4ECA800E54B23 /* mjpeg_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mjpeg_decoder.h; sourceTree = "<group>"; };
+		B9739F8D1EF4ECA800E54B23 /* planar_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = planar_functions.h; sourceTree = "<group>"; };
+		B9739F8E1EF4ECA800E54B23 /* rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		B9739F8F1EF4ECA800E54B23 /* rotate_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate_argb.h; sourceTree = "<group>"; };
+		B9739F901EF4ECA800E54B23 /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
+		B9739F911EF4ECA800E54B23 /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
+		B9739F921EF4ECA800E54B23 /* scale_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_argb.h; sourceTree = "<group>"; };
+		B9739F931EF4ECA800E54B23 /* scale_row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_row.h; sourceTree = "<group>"; };
+		B9739F941EF4ECA800E54B23 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		B9739F951EF4ECA800E54B23 /* video_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video_common.h; sourceTree = "<group>"; };
+		B9739F961EF4ECA800E54B23 /* libyuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libyuv.h; sourceTree = "<group>"; };
+		B9739F9B1EF4F35500E54B23 /* compare.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compare.cc; sourceTree = "<group>"; };
+		B9739F9C1EF4F35500E54B23 /* compare_common.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compare_common.cc; sourceTree = "<group>"; };
+		B9739F9D1EF4F35500E54B23 /* compare_gcc.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compare_gcc.cc; sourceTree = "<group>"; };
+		B9739F9E1EF4F35500E54B23 /* compare_neon.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compare_neon.cc; sourceTree = "<group>"; };
+		B9739F9F1EF4F35500E54B23 /* compare_neon64.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compare_neon64.cc; sourceTree = "<group>"; };
+		B9739FA01EF4F35500E54B23 /* compare_win.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compare_win.cc; sourceTree = "<group>"; };
+		B9739FA11EF4F35500E54B23 /* convert.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convert.cc; sourceTree = "<group>"; };
+		B9739FA21EF4F35500E54B23 /* convert_argb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convert_argb.cc; sourceTree = "<group>"; };
+		B9739FA31EF4F35500E54B23 /* convert_from.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convert_from.cc; sourceTree = "<group>"; };
+		B9739FA41EF4F35500E54B23 /* convert_from_argb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convert_from_argb.cc; sourceTree = "<group>"; };
+		B9739FA51EF4F35500E54B23 /* convert_jpeg.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convert_jpeg.cc; sourceTree = "<group>"; };
+		B9739FA61EF4F35500E54B23 /* convert_to_argb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convert_to_argb.cc; sourceTree = "<group>"; };
+		B9739FA71EF4F35500E54B23 /* convert_to_i420.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convert_to_i420.cc; sourceTree = "<group>"; };
+		B9739FA81EF4F35500E54B23 /* cpu_id.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cpu_id.cc; sourceTree = "<group>"; };
+		B9739FA91EF4F35500E54B23 /* mjpeg_decoder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mjpeg_decoder.cc; sourceTree = "<group>"; };
+		B9739FAA1EF4F35500E54B23 /* mjpeg_validate.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mjpeg_validate.cc; sourceTree = "<group>"; };
+		B9739FAB1EF4F35500E54B23 /* planar_functions.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = planar_functions.cc; sourceTree = "<group>"; };
+		B9739FAC1EF4F35500E54B23 /* rotate.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate.cc; sourceTree = "<group>"; };
+		B9739FAD1EF4F35500E54B23 /* rotate_any.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate_any.cc; sourceTree = "<group>"; };
+		B9739FAE1EF4F35500E54B23 /* rotate_argb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate_argb.cc; sourceTree = "<group>"; };
+		B9739FAF1EF4F35500E54B23 /* rotate_common.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate_common.cc; sourceTree = "<group>"; };
+		B9739FB01EF4F35500E54B23 /* rotate_gcc.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate_gcc.cc; sourceTree = "<group>"; };
+		B9739FB11EF4F35500E54B23 /* rotate_mips.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate_mips.cc; sourceTree = "<group>"; };
+		B9739FB21EF4F35500E54B23 /* rotate_neon.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate_neon.cc; sourceTree = "<group>"; };
+		B9739FB31EF4F35500E54B23 /* rotate_neon64.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate_neon64.cc; sourceTree = "<group>"; };
+		B9739FB41EF4F35500E54B23 /* rotate_win.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate_win.cc; sourceTree = "<group>"; };
+		B9739FB51EF4F35500E54B23 /* row_any.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = row_any.cc; sourceTree = "<group>"; };
+		B9739FB61EF4F35500E54B23 /* row_common.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = row_common.cc; sourceTree = "<group>"; };
+		B9739FB71EF4F35500E54B23 /* row_gcc.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = row_gcc.cc; sourceTree = "<group>"; };
+		B9739FB81EF4F35500E54B23 /* row_mips.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = row_mips.cc; sourceTree = "<group>"; };
+		B9739FB91EF4F35500E54B23 /* row_neon.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = row_neon.cc; sourceTree = "<group>"; };
+		B9739FBA1EF4F35500E54B23 /* row_neon64.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = row_neon64.cc; sourceTree = "<group>"; };
+		B9739FBB1EF4F35500E54B23 /* row_win.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = row_win.cc; sourceTree = "<group>"; };
+		B9739FBC1EF4F35500E54B23 /* scale.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale.cc; sourceTree = "<group>"; };
+		B9739FBD1EF4F35500E54B23 /* scale_any.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale_any.cc; sourceTree = "<group>"; };
+		B9739FBE1EF4F35500E54B23 /* scale_argb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale_argb.cc; sourceTree = "<group>"; };
+		B9739FBF1EF4F35500E54B23 /* scale_common.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale_common.cc; sourceTree = "<group>"; };
+		B9739FC01EF4F35500E54B23 /* scale_gcc.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale_gcc.cc; sourceTree = "<group>"; };
+		B9739FC11EF4F35500E54B23 /* scale_mips.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale_mips.cc; sourceTree = "<group>"; };
+		B9739FC21EF4F35500E54B23 /* scale_neon.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale_neon.cc; sourceTree = "<group>"; };
+		B9739FC31EF4F35500E54B23 /* scale_neon64.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale_neon64.cc; sourceTree = "<group>"; };
+		B9739FC41EF4F35500E54B23 /* scale_win.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale_win.cc; sourceTree = "<group>"; };
+		B9739FC51EF4F35500E54B23 /* video_common.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = video_common.cc; sourceTree = "<group>"; };
+		B9739FF11EF5021F00E54B23 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		B9739FF21EF5021F00E54B23 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		B9739FF41EF5064B00E54B23 /* 1.nes */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.nes; sourceTree = "<group>"; };
+		B9739FF51EF5064B00E54B23 /* 2.nes */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.nes; sourceTree = "<group>"; };
+		B9739FF61EF5064B00E54B23 /* 3.nes */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.nes; sourceTree = "<group>"; };
+		B9739FFB1EF5F8C000E54B23 /* nes_controller_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nes_controller_a@2x.png"; sourceTree = "<group>"; };
+		B9739FFC1EF5F8C000E54B23 /* nes_controller_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nes_controller_b@2x.png"; sourceTree = "<group>"; };
+		B9739FFD1EF5F8C000E54B23 /* nes_controller_dir@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nes_controller_dir@2x.png"; sourceTree = "<group>"; };
+		B9739FFE1EF5F8C000E54B23 /* nes_controller_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nes_controller_select@2x.png"; sourceTree = "<group>"; };
+		B9739FFF1EF5F8C000E54B23 /* nes_controller_start@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nes_controller_start@2x.png"; sourceTree = "<group>"; };
+		B973A0001EF5F8C000E54B23 /* nes_dir@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nes_dir@2x.png"; sourceTree = "<group>"; };
+		B973A0071EF6034F00E54B23 /* InfoNESHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoNESHelper.h; sourceTree = "<group>"; };
+		B973A0081EF6034F00E54B23 /* InfoNESHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InfoNESHelper.mm; sourceTree = "<group>"; };
+		B9EC40801F2E083700E9A49A /* 5.nes */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.nes; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9739F201EF4E02E00E54B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91E03961F2AE559005E96EE /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9739F391EF4E02F00E54B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9739F441EF4E02F00E54B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B91E03941F2AE558005E96EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B91E03951F2AE558005E96EE /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9739F1A1EF4E02E00E54B23 = {
+			isa = PBXGroup;
+			children = (
+				B9739F251EF4E02E00E54B23 /* NesSimulator */,
+				B9739F3F1EF4E02F00E54B23 /* NesSimulatorTests */,
+				B9739F4A1EF4E02F00E54B23 /* NesSimulatorUITests */,
+				B9739F241EF4E02E00E54B23 /* Products */,
+				B91E03941F2AE558005E96EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9739F241EF4E02E00E54B23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F231EF4E02E00E54B23 /* NesSimulator.app */,
+				B9739F3C1EF4E02F00E54B23 /* NesSimulatorTests.xctest */,
+				B9739F471EF4E02F00E54B23 /* NesSimulatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9739F251EF4E02E00E54B23 /* NesSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				B9739FFA1EF5F8C000E54B23 /* Images */,
+				B9739F801EF4ECA800E54B23 /* Vendors */,
+				B9739F761EF4EC6E00E54B23 /* Utils */,
+				B9739F591EF4E07F00E54B23 /* InfoNES */,
+				B9739F291EF4E02E00E54B23 /* AppDelegate.h */,
+				B9739F2A1EF4E02E00E54B23 /* AppDelegate.m */,
+				B9739F2C1EF4E02E00E54B23 /* ViewController.h */,
+				B9739F2D1EF4E02E00E54B23 /* ViewController.mm */,
+				04B1B4DF1F00AF6B00CC4789 /* JoyStickView.h */,
+				04B1B4E01F00AF6B00CC4789 /* JoyStickView.m */,
+				B9739F2F1EF4E02E00E54B23 /* Main.storyboard */,
+				B9739F321EF4E02E00E54B23 /* Assets.xcassets */,
+				B9739F341EF4E02E00E54B23 /* LaunchScreen.storyboard */,
+				B9739F371EF4E02E00E54B23 /* Info.plist */,
+				B91E03971F2AEA99005E96EE /* 6.nes */,
+				B9EC40801F2E083700E9A49A /* 5.nes */,
+				B9739F741EF4E5D800E54B23 /* 4.nes */,
+				B9739FF41EF5064B00E54B23 /* 1.nes */,
+				B9739FF51EF5064B00E54B23 /* 2.nes */,
+				B9739FF61EF5064B00E54B23 /* 3.nes */,
+				B9739F261EF4E02E00E54B23 /* Supporting Files */,
+			);
+			path = NesSimulator;
+			sourceTree = "<group>";
+		};
+		B9739F261EF4E02E00E54B23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F271EF4E02E00E54B23 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9739F3F1EF4E02F00E54B23 /* NesSimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F401EF4E02F00E54B23 /* NesSimulatorTests.m */,
+				B9739F421EF4E02F00E54B23 /* Info.plist */,
+			);
+			path = NesSimulatorTests;
+			sourceTree = "<group>";
+		};
+		B9739F4A1EF4E02F00E54B23 /* NesSimulatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F4B1EF4E02F00E54B23 /* NesSimulatorUITests.m */,
+				B9739F4D1EF4E02F00E54B23 /* Info.plist */,
+			);
+			path = NesSimulatorUITests;
+			sourceTree = "<group>";
+		};
+		B9739F591EF4E07F00E54B23 /* InfoNES */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F5A1EF4E07F00E54B23 /* InfoNES.cpp */,
+				B9739F5B1EF4E07F00E54B23 /* InfoNES.h */,
+				B9739F5F1EF4E07F00E54B23 /* InfoNES_Mapper.cpp */,
+				B9739F601EF4E07F00E54B23 /* InfoNES_Mapper.h */,
+				B9739F611EF4E07F00E54B23 /* InfoNES_pAPU.cpp */,
+				B9739F621EF4E07F00E54B23 /* InfoNES_pAPU.h */,
+				B9739F631EF4E07F00E54B23 /* InfoNES_System.h */,
+				B9739F721EF4E0B300E54B23 /* InfoNES_System_iOS.mm */,
+				B973A0071EF6034F00E54B23 /* InfoNESHelper.h */,
+				B973A0081EF6034F00E54B23 /* InfoNESHelper.mm */,
+				B9739F651EF4E07F00E54B23 /* InfoNES_Types.h */,
+				B9739F661EF4E07F00E54B23 /* K6502.cpp */,
+				B9739F671EF4E07F00E54B23 /* K6502.h */,
+				B9739F681EF4E07F00E54B23 /* K6502_rw.h */,
+				B9739F691EF4E07F00E54B23 /* resource.h */,
+			);
+			path = InfoNES;
+			sourceTree = "<group>";
+		};
+		B9739F761EF4EC6E00E54B23 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F771EF4EC6E00E54B23 /* QMImageHelper.h */,
+				B9739F781EF4EC6E00E54B23 /* QMImageHelper.m */,
+				B9739FF11EF5021F00E54B23 /* AudioPlayer.h */,
+				B9739FF21EF5021F00E54B23 /* AudioPlayer.m */,
+				B91E03991F2AF911005E96EE /* OpenALPlayer.h */,
+				B91E039A1F2AF911005E96EE /* OpenALPlayer.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B9739F801EF4ECA800E54B23 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F811EF4ECA800E54B23 /* libyuv */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		B9739F811EF4ECA800E54B23 /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F821EF4ECA800E54B23 /* include */,
+				B9739F9A1EF4F35500E54B23 /* source */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		B9739F821EF4ECA800E54B23 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F831EF4ECA800E54B23 /* libyuv */,
+				B9739F961EF4ECA800E54B23 /* libyuv.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B9739F831EF4ECA800E54B23 /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F841EF4ECA800E54B23 /* basic_types.h */,
+				B9739F851EF4ECA800E54B23 /* compare.h */,
+				B9739F861EF4ECA800E54B23 /* convert.h */,
+				B9739F871EF4ECA800E54B23 /* convert_argb.h */,
+				B9739F881EF4ECA800E54B23 /* convert_from.h */,
+				B9739F891EF4ECA800E54B23 /* convert_from_argb.h */,
+				B9739F8A1EF4ECA800E54B23 /* cpu_id.h */,
+				B9739F8B1EF4ECA800E54B23 /* format_conversion.h */,
+				B9739F8C1EF4ECA800E54B23 /* mjpeg_decoder.h */,
+				B9739F8D1EF4ECA800E54B23 /* planar_functions.h */,
+				B9739F8E1EF4ECA800E54B23 /* rotate.h */,
+				B9739F8F1EF4ECA800E54B23 /* rotate_argb.h */,
+				B9739F901EF4ECA800E54B23 /* row.h */,
+				B9739F911EF4ECA800E54B23 /* scale.h */,
+				B9739F921EF4ECA800E54B23 /* scale_argb.h */,
+				B9739F931EF4ECA800E54B23 /* scale_row.h */,
+				B9739F941EF4ECA800E54B23 /* version.h */,
+				B9739F951EF4ECA800E54B23 /* video_common.h */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		B9739F9A1EF4F35500E54B23 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				B9739F9B1EF4F35500E54B23 /* compare.cc */,
+				B9739F9C1EF4F35500E54B23 /* compare_common.cc */,
+				B9739F9D1EF4F35500E54B23 /* compare_gcc.cc */,
+				B9739F9E1EF4F35500E54B23 /* compare_neon.cc */,
+				B9739F9F1EF4F35500E54B23 /* compare_neon64.cc */,
+				B9739FA01EF4F35500E54B23 /* compare_win.cc */,
+				B9739FA11EF4F35500E54B23 /* convert.cc */,
+				B9739FA21EF4F35500E54B23 /* convert_argb.cc */,
+				B9739FA31EF4F35500E54B23 /* convert_from.cc */,
+				B9739FA41EF4F35500E54B23 /* convert_from_argb.cc */,
+				B9739FA51EF4F35500E54B23 /* convert_jpeg.cc */,
+				B9739FA61EF4F35500E54B23 /* convert_to_argb.cc */,
+				B9739FA71EF4F35500E54B23 /* convert_to_i420.cc */,
+				B9739FA81EF4F35500E54B23 /* cpu_id.cc */,
+				B9739FA91EF4F35500E54B23 /* mjpeg_decoder.cc */,
+				B9739FAA1EF4F35500E54B23 /* mjpeg_validate.cc */,
+				B9739FAB1EF4F35500E54B23 /* planar_functions.cc */,
+				B9739FAC1EF4F35500E54B23 /* rotate.cc */,
+				B9739FAD1EF4F35500E54B23 /* rotate_any.cc */,
+				B9739FAE1EF4F35500E54B23 /* rotate_argb.cc */,
+				B9739FAF1EF4F35500E54B23 /* rotate_common.cc */,
+				B9739FB01EF4F35500E54B23 /* rotate_gcc.cc */,
+				B9739FB11EF4F35500E54B23 /* rotate_mips.cc */,
+				B9739FB21EF4F35500E54B23 /* rotate_neon.cc */,
+				B9739FB31EF4F35500E54B23 /* rotate_neon64.cc */,
+				B9739FB41EF4F35500E54B23 /* rotate_win.cc */,
+				B9739FB51EF4F35500E54B23 /* row_any.cc */,
+				B9739FB61EF4F35500E54B23 /* row_common.cc */,
+				B9739FB71EF4F35500E54B23 /* row_gcc.cc */,
+				B9739FB81EF4F35500E54B23 /* row_mips.cc */,
+				B9739FB91EF4F35500E54B23 /* row_neon.cc */,
+				B9739FBA1EF4F35500E54B23 /* row_neon64.cc */,
+				B9739FBB1EF4F35500E54B23 /* row_win.cc */,
+				B9739FBC1EF4F35500E54B23 /* scale.cc */,
+				B9739FBD1EF4F35500E54B23 /* scale_any.cc */,
+				B9739FBE1EF4F35500E54B23 /* scale_argb.cc */,
+				B9739FBF1EF4F35500E54B23 /* scale_common.cc */,
+				B9739FC01EF4F35500E54B23 /* scale_gcc.cc */,
+				B9739FC11EF4F35500E54B23 /* scale_mips.cc */,
+				B9739FC21EF4F35500E54B23 /* scale_neon.cc */,
+				B9739FC31EF4F35500E54B23 /* scale_neon64.cc */,
+				B9739FC41EF4F35500E54B23 /* scale_win.cc */,
+				B9739FC51EF4F35500E54B23 /* video_common.cc */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		B9739FFA1EF5F8C000E54B23 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04B1B4E21F00AF7100CC4789 /* stick_base.png */,
+				04B1B4E31F00AF7100CC4789 /* stick_hold.png */,
+				04B1B4E41F00AF7100CC4789 /* stick_normal.png */,
+				B9739FFB1EF5F8C000E54B23 /* nes_controller_a@2x.png */,
+				B9739FFC1EF5F8C000E54B23 /* nes_controller_b@2x.png */,
+				B9739FFD1EF5F8C000E54B23 /* nes_controller_dir@2x.png */,
+				B9739FFE1EF5F8C000E54B23 /* nes_controller_select@2x.png */,
+				B9739FFF1EF5F8C000E54B23 /* nes_controller_start@2x.png */,
+				B973A0001EF5F8C000E54B23 /* nes_dir@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9739F221EF4E02E00E54B23 /* NesSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9739F501EF4E02F00E54B23 /* Build configuration list for PBXNativeTarget "NesSimulator" */;
+			buildPhases = (
+				B9739F1F1EF4E02E00E54B23 /* Sources */,
+				B9739F201EF4E02E00E54B23 /* Frameworks */,
+				B9739F211EF4E02E00E54B23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NesSimulator;
+			productName = NesSimulator;
+			productReference = B9739F231EF4E02E00E54B23 /* NesSimulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9739F3B1EF4E02F00E54B23 /* NesSimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9739F531EF4E02F00E54B23 /* Build configuration list for PBXNativeTarget "NesSimulatorTests" */;
+			buildPhases = (
+				B9739F381EF4E02F00E54B23 /* Sources */,
+				B9739F391EF4E02F00E54B23 /* Frameworks */,
+				B9739F3A1EF4E02F00E54B23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9739F3E1EF4E02F00E54B23 /* PBXTargetDependency */,
+			);
+			name = NesSimulatorTests;
+			productName = NesSimulatorTests;
+			productReference = B9739F3C1EF4E02F00E54B23 /* NesSimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9739F461EF4E02F00E54B23 /* NesSimulatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9739F561EF4E02F00E54B23 /* Build configuration list for PBXNativeTarget "NesSimulatorUITests" */;
+			buildPhases = (
+				B9739F431EF4E02F00E54B23 /* Sources */,
+				B9739F441EF4E02F00E54B23 /* Frameworks */,
+				B9739F451EF4E02F00E54B23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9739F491EF4E02F00E54B23 /* PBXTargetDependency */,
+			);
+			name = NesSimulatorUITests;
+			productName = NesSimulatorUITests;
+			productReference = B9739F471EF4E02F00E54B23 /* NesSimulatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9739F1B1EF4E02E00E54B23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = qinmin;
+				TargetAttributes = {
+					B9739F221EF4E02E00E54B23 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SP96U9X4RF;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					B9739F3B1EF4E02F00E54B23 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SP96U9X4RF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9739F221EF4E02E00E54B23;
+					};
+					B9739F461EF4E02F00E54B23 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SP96U9X4RF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9739F221EF4E02E00E54B23;
+					};
+				};
+			};
+			buildConfigurationList = B9739F1E1EF4E02E00E54B23 /* Build configuration list for PBXProject "NESSimulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9739F1A1EF4E02E00E54B23;
+			productRefGroup = B9739F241EF4E02E00E54B23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9739F221EF4E02E00E54B23 /* NesSimulator */,
+				B9739F3B1EF4E02F00E54B23 /* NesSimulatorTests */,
+				B9739F461EF4E02F00E54B23 /* NesSimulatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9739F211EF4E02E00E54B23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EC40811F2E085A00E9A49A /* 5.nes in Resources */,
+				B91E03981F2AEB02005E96EE /* 6.nes in Resources */,
+				B9739F361EF4E02E00E54B23 /* LaunchScreen.storyboard in Resources */,
+				B9739F751EF4E5D800E54B23 /* 4.nes in Resources */,
+				B9739FF71EF5064B00E54B23 /* 1.nes in Resources */,
+				04B1B4E51F00AF7100CC4789 /* stick_base.png in Resources */,
+				B973A0031EF5F8C000E54B23 /* nes_controller_dir@2x.png in Resources */,
+				04B1B4E61F00AF7100CC4789 /* stick_hold.png in Resources */,
+				B9739FF91EF5064B00E54B23 /* 3.nes in Resources */,
+				B973A0041EF5F8C000E54B23 /* nes_controller_select@2x.png in Resources */,
+				B9739FF81EF5064B00E54B23 /* 2.nes in Resources */,
+				04B1B4E71F00AF7100CC4789 /* stick_normal.png in Resources */,
+				B973A0021EF5F8C000E54B23 /* nes_controller_b@2x.png in Resources */,
+				B973A0011EF5F8C000E54B23 /* nes_controller_a@2x.png in Resources */,
+				B9739F331EF4E02E00E54B23 /* Assets.xcassets in Resources */,
+				B973A0051EF5F8C000E54B23 /* nes_controller_start@2x.png in Resources */,
+				B9739F311EF4E02E00E54B23 /* Main.storyboard in Resources */,
+				B973A0061EF5F8C000E54B23 /* nes_dir@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9739F3A1EF4E02F00E54B23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9739F451EF4E02F00E54B23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9739F1F1EF4E02E00E54B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9739F7D1EF4EC6E00E54B23 /* QMImageHelper.m in Sources */,
+				B9739FC81EF4F35500E54B23 /* compare_gcc.cc in Sources */,
+				B9739F6F1EF4E07F00E54B23 /* InfoNES_pAPU.cpp in Sources */,
+				B9739FD81EF4F35500E54B23 /* rotate_any.cc in Sources */,
+				B9739FD71EF4F35500E54B23 /* rotate.cc in Sources */,
+				B9739FCF1EF4F35500E54B23 /* convert_from_argb.cc in Sources */,
+				B9739FED1EF4F35500E54B23 /* scale_neon.cc in Sources */,
+				B9739FCA1EF4F35500E54B23 /* compare_neon64.cc in Sources */,
+				B9739FD21EF4F35500E54B23 /* convert_to_i420.cc in Sources */,
+				B9739FD01EF4F35500E54B23 /* convert_jpeg.cc in Sources */,
+				B973A0091EF6034F00E54B23 /* InfoNESHelper.mm in Sources */,
+				B9739FDC1EF4F35500E54B23 /* rotate_mips.cc in Sources */,
+				B9739FDD1EF4F35500E54B23 /* rotate_neon.cc in Sources */,
+				B91E039B1F2AF911005E96EE /* OpenALPlayer.m in Sources */,
+				B9739FCB1EF4F35500E54B23 /* compare_win.cc in Sources */,
+				B9739FCE1EF4F35500E54B23 /* convert_from.cc in Sources */,
+				04B1B4E11F00AF6B00CC4789 /* JoyStickView.m in Sources */,
+				B9739FE61EF4F35500E54B23 /* row_win.cc in Sources */,
+				B9739F731EF4E0B300E54B23 /* InfoNES_System_iOS.mm in Sources */,
+				B9739FE51EF4F35500E54B23 /* row_neon64.cc in Sources */,
+				B9739F2E1EF4E02E00E54B23 /* ViewController.mm in Sources */,
+				B9739FEA1EF4F35500E54B23 /* scale_common.cc in Sources */,
+				B9739F711EF4E07F00E54B23 /* K6502.cpp in Sources */,
+				B9739FE91EF4F35500E54B23 /* scale_argb.cc in Sources */,
+				B9739FD41EF4F35500E54B23 /* mjpeg_decoder.cc in Sources */,
+				B9739FE11EF4F35500E54B23 /* row_common.cc in Sources */,
+				B9739FEF1EF4F35500E54B23 /* scale_win.cc in Sources */,
+				B9739FE21EF4F35500E54B23 /* row_gcc.cc in Sources */,
+				B9739FD61EF4F35500E54B23 /* planar_functions.cc in Sources */,
+				B9739FDF1EF4F35500E54B23 /* rotate_win.cc in Sources */,
+				B9739FC71EF4F35500E54B23 /* compare_common.cc in Sources */,
+				B9739F2B1EF4E02E00E54B23 /* AppDelegate.m in Sources */,
+				B9739FE01EF4F35500E54B23 /* row_any.cc in Sources */,
+				B9739FC91EF4F35500E54B23 /* compare_neon.cc in Sources */,
+				B9739FE81EF4F35500E54B23 /* scale_any.cc in Sources */,
+				B9739FEB1EF4F35500E54B23 /* scale_gcc.cc in Sources */,
+				B9739F6E1EF4E07F00E54B23 /* InfoNES_Mapper.cpp in Sources */,
+				B9739FD91EF4F35500E54B23 /* rotate_argb.cc in Sources */,
+				B9739FEC1EF4F35500E54B23 /* scale_mips.cc in Sources */,
+				B9739F6A1EF4E07F00E54B23 /* InfoNES.cpp in Sources */,
+				B9739F281EF4E02E00E54B23 /* main.m in Sources */,
+				B9739FDB1EF4F35500E54B23 /* rotate_gcc.cc in Sources */,
+				B9739FE31EF4F35500E54B23 /* row_mips.cc in Sources */,
+				B9739FE71EF4F35500E54B23 /* scale.cc in Sources */,
+				B9739FDE1EF4F35500E54B23 /* rotate_neon64.cc in Sources */,
+				B9739FCD1EF4F35500E54B23 /* convert_argb.cc in Sources */,
+				B9739FEE1EF4F35500E54B23 /* scale_neon64.cc in Sources */,
+				B9739FC61EF4F35500E54B23 /* compare.cc in Sources */,
+				B9739FDA1EF4F35500E54B23 /* rotate_common.cc in Sources */,
+				B9739FF01EF4F35500E54B23 /* video_common.cc in Sources */,
+				B9739FCC1EF4F35500E54B23 /* convert.cc in Sources */,
+				B9739FD31EF4F35500E54B23 /* cpu_id.cc in Sources */,
+				B9739FF31EF5021F00E54B23 /* AudioPlayer.m in Sources */,
+				B9739FD11EF4F35500E54B23 /* convert_to_argb.cc in Sources */,
+				B9739FE41EF4F35500E54B23 /* row_neon.cc in Sources */,
+				B9739FD51EF4F35500E54B23 /* mjpeg_validate.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9739F381EF4E02F00E54B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9739F411EF4E02F00E54B23 /* NesSimulatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9739F431EF4E02F00E54B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9739F4C1EF4E02F00E54B23 /* NesSimulatorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9739F3E1EF4E02F00E54B23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9739F221EF4E02E00E54B23 /* NesSimulator */;
+			targetProxy = B9739F3D1EF4E02F00E54B23 /* PBXContainerItemProxy */;
+		};
+		B9739F491EF4E02F00E54B23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9739F221EF4E02E00E54B23 /* NesSimulator */;
+			targetProxy = B9739F481EF4E02F00E54B23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9739F2F1EF4E02E00E54B23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9739F301EF4E02E00E54B23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9739F341EF4E02E00E54B23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9739F351EF4E02E00E54B23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9739F4E1EF4E02F00E54B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9739F4F1EF4E02F00E54B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9739F511EF4E02F00E54B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/NesSimulator/Vendors/libyuv/include";
+				INFOPLIST_FILE = NesSimulator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinmin.nes.simulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B9739F521EF4E02F00E54B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/NesSimulator/Vendors/libyuv/include";
+				INFOPLIST_FILE = NesSimulator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinmin.nes.simulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B9739F541EF4E02F00E54B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SP96U9X4RF;
+				INFOPLIST_FILE = NesSimulatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinmin.NesSimulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NESSimulator.temp_caseinsensitive_rename.app/NESSimulator.temp_caseinsensitive_rename";
+			};
+			name = Debug;
+		};
+		B9739F551EF4E02F00E54B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SP96U9X4RF;
+				INFOPLIST_FILE = NesSimulatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinmin.NesSimulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NESSimulator.temp_caseinsensitive_rename.app/NESSimulator.temp_caseinsensitive_rename";
+			};
+			name = Release;
+		};
+		B9739F571EF4E02F00E54B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SP96U9X4RF;
+				INFOPLIST_FILE = NesSimulatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinmin.NesSimulatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NesSimulator;
+			};
+			name = Debug;
+		};
+		B9739F581EF4E02F00E54B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SP96U9X4RF;
+				INFOPLIST_FILE = NesSimulatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinmin.NesSimulatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NesSimulator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9739F1E1EF4E02E00E54B23 /* Build configuration list for PBXProject "NESSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9739F4E1EF4E02F00E54B23 /* Debug */,
+				B9739F4F1EF4E02F00E54B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9739F501EF4E02F00E54B23 /* Build configuration list for PBXNativeTarget "NesSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9739F511EF4E02F00E54B23 /* Debug */,
+				B9739F521EF4E02F00E54B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9739F531EF4E02F00E54B23 /* Build configuration list for PBXNativeTarget "NesSimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9739F541EF4E02F00E54B23 /* Debug */,
+				B9739F551EF4E02F00E54B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9739F561EF4E02F00E54B23 /* Build configuration list for PBXNativeTarget "NesSimulatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9739F571EF4E02F00E54B23 /* Debug */,
+				B9739F581EF4E02F00E54B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9739F1B1EF4E02E00E54B23 /* Project object */;
+}

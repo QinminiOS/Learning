@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JiF-wS-gqJ">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G9-pf-cc1">
+                                <rect key="frame" x="289" y="973" width="93" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dIX-gG-CjA"/>
+                                    <constraint firstAttribute="width" constant="93" id="j9L-pF-ixP"/>
+                                </constraints>
+                                <state key="normal" title="select"/>
+                                <connections>
+                                    <action selector="optionButtonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="rVD-f7-Utz"/>
+                                    <action selector="optionButtonTouchEnd:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="SMl-R7-TcV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unV-7h-SgG">
+                                <rect key="frame" x="363" y="972" width="93" height="50"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="optionButtonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="mEy-oE-ZmM"/>
+                                    <action selector="optionButtonTouchEnd:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="SVW-Nm-sFX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7Q-2o-imr">
+                                <rect key="frame" x="674" y="877" width="79" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Hqc-WI-XiP"/>
+                                    <constraint firstAttribute="width" constant="79" id="y03-cM-OUs"/>
+                                </constraints>
+                                <state key="normal" image="nes_controller_a.png"/>
+                                <connections>
+                                    <action selector="optionButtonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="AaE-HP-Vkx"/>
+                                    <action selector="optionButtonTouchEnd:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="gT0-Lk-2KP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxI-UB-C1k">
+                                <rect key="frame" x="662" y="945" width="104" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="3PZ-7g-veM"/>
+                                    <constraint firstAttribute="width" constant="104" id="65d-aP-AQr"/>
+                                </constraints>
+                                <state key="normal" image="nes_controller_b.png"/>
+                                <connections>
+                                    <action selector="optionButtonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="AdN-hi-TD3"/>
+                                    <action selector="optionButtonTouchEnd:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="KBY-Ya-wjO"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzS-5Y-TNa" customClass="JoyStickView">
+                                <rect key="frame" x="-4" y="901" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="YUp-cL-388"/>
+                                    <constraint firstAttribute="height" constant="128" id="zxe-l7-WJ8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qxI-UB-C1k" firstAttribute="leading" secondItem="F7Q-2o-imr" secondAttribute="trailing" constant="-91" id="15E-s1-NzE"/>
+                            <constraint firstItem="unV-7h-SgG" firstAttribute="top" secondItem="9G9-pf-cc1" secondAttribute="top" constant="-1" id="4lK-0u-Kqt"/>
+                            <constraint firstAttribute="trailing" secondItem="qxI-UB-C1k" secondAttribute="trailing" constant="2" id="9qx-ZM-rEd"/>
+                            <constraint firstItem="unV-7h-SgG" firstAttribute="height" secondItem="9G9-pf-cc1" secondAttribute="height" id="LwB-ne-puH"/>
+                            <constraint firstItem="unV-7h-SgG" firstAttribute="width" secondItem="9G9-pf-cc1" secondAttribute="width" id="OZH-tO-4Km"/>
+                            <constraint firstAttribute="trailing" secondItem="JiF-wS-gqJ" secondAttribute="trailing" id="Qad-PX-5se"/>
+                            <constraint firstItem="NzS-5Y-TNa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-4" id="R2r-SN-0Tf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F7Q-2o-imr" secondAttribute="bottom" constant="67" id="REv-o6-OSh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JiF-wS-gqJ" secondAttribute="bottom" id="S43-nh-hOJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qxI-UB-C1k" secondAttribute="bottom" constant="2" id="TPV-1a-2fz"/>
+                            <constraint firstItem="9G9-pf-cc1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-48.5" id="VCL-Zi-AG4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NzS-5Y-TNa" secondAttribute="bottom" constant="-5" id="VEB-ne-cDI"/>
+                            <constraint firstItem="JiF-wS-gqJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hXs-f6-pS9"/>
+                            <constraint firstItem="unV-7h-SgG" firstAttribute="centerY" secondItem="F7Q-2o-imr" secondAttribute="centerY" constant="80" id="q3w-Fv-9Ec"/>
+                            <constraint firstItem="unV-7h-SgG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="25.5" id="ude-5O-ukY"/>
+                            <constraint firstItem="JiF-wS-gqJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zFF-LO-Z8B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnA" destination="F7Q-2o-imr" id="rsH-cU-vOL"/>
+                        <outlet property="btnB" destination="qxI-UB-C1k" id="Iq5-TW-5n0"/>
+                        <outlet property="imageView" destination="JiF-wS-gqJ" id="qEU-cd-bO3"/>
+                        <outlet property="joystick" destination="NzS-5Y-TNa" id="o7j-bp-nOa"/>
+                        <outlet property="selectBtn" destination="9G9-pf-cc1" id="kuk-a8-E2h"/>
+                        <outlet property="startBtn" destination="unV-7h-SgG" id="O8D-wr-R5d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="137.109375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nes_controller_a.png" width="50" height="50"/>
+        <image name="nes_controller_b.png" width="50" height="50"/>
+    </resources>
+</document>
