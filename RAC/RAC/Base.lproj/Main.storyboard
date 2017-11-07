@@ -48,9 +48,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="age" destination="bPI-MK-GLW" id="coY-Wf-00i"/>
+                        <outlet property="ageTextField" destination="bPI-MK-GLW" id="HwI-tI-m86"/>
                         <outlet property="loginButton" destination="i3Y-4s-fHr" id="67o-9q-Bc2"/>
-                        <outlet property="name" destination="ma6-VC-1RF" id="qoP-de-312"/>
+                        <outlet property="nameTextField" destination="ma6-VC-1RF" id="7CH-td-hdx"/>
                         <outlet property="textLabel" destination="dhZ-Dz-USF" id="YZA-3r-XjD"/>
                     </connections>
                 </viewController>
