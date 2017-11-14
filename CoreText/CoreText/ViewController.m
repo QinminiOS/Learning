@@ -30,8 +30,14 @@
     MMLabel *label = [[MMLabel alloc] initWithFrame:CGRectMake(100, 100, 300, 300)];
     label.backgroundColor = [UIColor whiteColor];
     
+    NSDictionary *attributes = @{
+                                 NSFontAttributeName:[UIFont systemFontOfSize:30],
+                                 NSForegroundColorAttributeName:[UIColor greenColor],
+                                 NSUnderlineStyleAttributeName:@(NSUnderlineStyleSingle)
+                                 };
+    
     NSString *s = @"hello6666666666 酷狗！！！";
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:s attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:30],NSForegroundColorAttributeName:[UIColor greenColor]}];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:s attributes:attributes];
     label.range = [s rangeOfString:@"酷狗"];
     label.text = str;
     [self.view addSubview:label];
