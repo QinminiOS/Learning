@@ -139,19 +139,19 @@ void quickSort(int *a, int left, int right)
 }
 
 //////////////////main///////////////////////
-int main(int argc, const char * argv[])
-{
-    int a[] = {0, 1, 4, 3, 2, 5, 6, 10, 8, 7, 9};
-    
-    int buffer[11];
-    mergeSort(a, buffer, sizeof(a)/sizeof(*a));
-    printArr(a, sizeof(a)/sizeof(*a));
-    
-    //heapSort(a, sizeof(a)/sizeof(*a));
-    //printArr(a, sizeof(a)/sizeof(*a));
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    int a[] = {0, 1, 4, 3, 2, 5, 6, 10, 8, 7, 9};
+//    
+//    int buffer[11];
+//    mergeSort(a, buffer, sizeof(a)/sizeof(*a));
+//    printArr(a, sizeof(a)/sizeof(*a));
+//    
+//    //heapSort(a, sizeof(a)/sizeof(*a));
+//    //printArr(a, sizeof(a)/sizeof(*a));
+//    
+//    return 0;
+//}
 
 
 

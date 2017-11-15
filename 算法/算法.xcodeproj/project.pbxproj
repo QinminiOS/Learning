@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B907266C1F997C3E008AD066 /* 10.m in Sources */ = {isa = PBXBuildFile; fileRef = B907266B1F997C3E008AD066 /* 10.m */; };
+		B91BFAEF1FBD06490054B268 /* 34.m in Sources */ = {isa = PBXBuildFile; fileRef = B91BFAEE1FBD06490054B268 /* 34.m */; };
 		B91F285C1F9D73E700689DE3 /* 19.mm in Sources */ = {isa = PBXBuildFile; fileRef = B91F285B1F9D73E700689DE3 /* 19.mm */; };
 		B91F285E1F9D781800689DE3 /* 20.mm in Sources */ = {isa = PBXBuildFile; fileRef = B91F285D1F9D781800689DE3 /* 20.mm */; };
 		B91F28601F9DBA7B00689DE3 /* 22.mm in Sources */ = {isa = PBXBuildFile; fileRef = B91F285F1F9DBA7B00689DE3 /* 22.mm */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		B907266B1F997C3E008AD066 /* 10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 10.m; sourceTree = "<group>"; };
+		B91BFAEE1FBD06490054B268 /* 34.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 34.m; sourceTree = "<group>"; };
 		B91F285B1F9D73E700689DE3 /* 19.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 19.mm; sourceTree = "<group>"; };
 		B91F285D1F9D781800689DE3 /* 20.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 20.mm; sourceTree = "<group>"; };
 		B91F285F1F9DBA7B00689DE3 /* 22.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = 22.mm; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				B983EFA71FA768A2002F776C /* 31.m */,
 				B983EFA91FA76D97002F776C /* 32.mm */,
 				B983EFAB1FA77247002F776C /* 33.m */,
+				B91BFAEE1FBD06490054B268 /* 34.m */,
 			);
 			path = "算法";
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				B92AE3501F9F18E200A99214 /* 23.mm in Sources */,
 				B91F28621F9DC87200689DE3 /* tree.mm in Sources */,
 				B9B8A0EA1F97A45C00920974 /* 01.mm in Sources */,
+				B91BFAEF1FBD06490054B268 /* 34.m in Sources */,
 				B934BB991FA225BA00011B09 /* 28.m in Sources */,
 				B983EFA81FA768A2002F776C /* 31.m in Sources */,
 				B9BC78461F99C68D00F548B4 /* 11.m in Sources */,
