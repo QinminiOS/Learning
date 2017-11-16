@@ -83,8 +83,9 @@ LinkNode* findTheSimilarNode(LinkNode *first, LinkNode* second)
     return p1;
 }
 
-int main(int argc, const char * argv[])
-{
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    
+//    return 0;
+//}
+
