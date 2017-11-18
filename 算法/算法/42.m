@@ -43,14 +43,15 @@ void rotateWord(const char *s, char *str, int index)
     str[len] = '\0';
 }
 
-int main(int argc, const char * argv[])
-{
-    const char *s = "abcdefg";
-    char des[strlen(s)+1];
-    
-    rotateWord(s, des, 2);
-    
-    printf("%s\n", des);
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    const char *s = "abcdefg";
+//    char des[strlen(s)+1];
+//    
+//    rotateWord(s, des, 2);
+//    
+//    printf("%s\n", des);
+//    
+//    return 0;
+//}
+

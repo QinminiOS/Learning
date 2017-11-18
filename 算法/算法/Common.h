@@ -18,6 +18,7 @@
 #import <list>
 #import <stack>
 #import <queue>
+#import <deque>
 
 using namespace std;
 
